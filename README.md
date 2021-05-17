@@ -3,11 +3,11 @@
 
 ## GLPI - Gestionnaire de Parc Informatique
 
-Es una **aplicación web** que ayuda a las empresas con la gestión de su sistema de información.
+Es una **herramienta web** en **software libre** que ofrece una gestión integral del inventario informático de una empresa además de incluir un sistema de gestión de incidencias (ticketing / helpdesk).
 
-Este proyecto es de **código abierto**, por lo que se puede ejecutar, modificar o desarrollar contribuyendo a la evolución de la solución proponiendo módulos adicionales libres y de código abierto en GitHub.  
+La herramienta está desarrollada para entornos LAMP (Apache-PHP-MySQL), por lo que puede ser instalada tanto en **servidores Windows como Linux** y su fácil instalación y manejo permite gestionar todo el soporte y mantenimiento de una empresa de una manera rápida y sencilla, por lo que el despliegue y la puesta en marcha son bastante reducidos.
 
-Las funcionalidades de este software ayudan a los administradores a **crear una de base de datos de activos técnicos** así como a gestionarla y proporciona un historial de las intervenciones de mantenimiento. La funcionalidad de asistencia (ticket) ofrece a los usuarios un servicio de declaración de incidencias o de solicitudes basadas en activos técnicos o no.
+Este doble papel de gestor de inventario y helpdesk para el seguimiento de intervenciones, permite a los administradores, y al personal de soporte, vincular las intervenciones realizadas a Usuarios y a equipos, generándose así un historial completo del mantenimiento realizado.
 
 
 ## Técnologías utilizadas 
