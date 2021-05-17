@@ -23,87 +23,32 @@ GLPI utiliza:
 
 
 
-## Características específicas: 
+## ¿Qué nos ofrece GLPI?: 
 
-### **Inventario**
-```
-- Inventario de ordenadres, impresorasperiféricas en red y componentes asociados a través de una interfaz compuesta por OCS iventory y FusionInventory. 
+### **- Módulo de Inventario**
 
-- Gestión administrativa, contratos, documentos relacionados con componentes del inventario. 
-```
+Esta sección se enfoca en el control de los equipos de cómputo en general como laptops, computadoras, monitores, teléfonos, software, impresoras, cartuchos, etc. Es una base de datos donde se tiene registrado todo el equipo de la empresa.
 
-### **ServiceDesk ITIL Compliant**
+### **- Módulo de Soporte**
 
-```
-- Gestión de problemas en varios entornos vía la creación de tickets, gestión de los tickets, asignación, planificación de los tikets, etc...
+En este módulo se gestionan los tickets que se tienen en el GLPI dentro de las cuales se puede generar, modificar, resolver y cerrar tickets de solicitudes que los usuarios reporten vía e-mail, telefónica o directamente, referente a elementos o equipos que tengan relación al departamento de tecnologías de la información.  También se pueden agregar avances dentro de los mismos tickets, agregar documentos y relacionarlos con más tickets con la finalidad de llevar un historial el cual pueda ser analizado.
 
-- Gestión de problemas, proyectos y cambios.
-```
+### **- Estadística**
 
-### **Usuario finales**
+En esta opción vas a poder de forma estadística todos los tiquetes, problemas y cambios que han solicitado los usuarios, cuenta con un filtro y con el rango de las fechas.
 
-```
-- Historial de las intervenciones
+### **- Módulo de Gestión**
 
-- Encuesta de satisfacción
+El módulo de gestión permite a los usuarios gestionar contactos, proveedores, presupuestos, licencias, entre otros.
 
-- Comentarios en solicitud
+### **- Módulo de Administración**
 
-- Seguimiento de correos de la solicitud de intervención
-```
+Este módulo administra a los usuarios, grupos, entidades, perfiles, reglas y diccionarios. También proporciona herramientas de mantenimiento de la aplicación como la copia de seguridad de base de datos, restauración y actualización de versión.
 
-### **Técnicos**
+### **- Módulo de Configuración**
 
-```
-- Gestión de las solicitudes de intervención
+Este módulo   administra   y   controla   los   parámetros   dentro   de GLPI, títulos   en   general del   sistema, notificaciones por correo, SLA, configuración en general, identificación por origen externo o directorio activo y se administran los plugin.
 
-- Escalamiento de los tickets
-```
-
-### **Estadísticas**
-
-```
-- Informes en varios formatos (PNG, SVG, CSV)
-
-- Estadísticas globales
-
-- Estadística por categoría (por técnico, hardware, usuario, categoria, prioridad, ubicación...)
-```
-
-### **Administración**
-
-```
-- Gestión del estado y de reservas del material
-
-- Gestión de los contratos y documentos
-
-- Sistema básico de gestión de sistema de conocimientos
-
-- Gestión de las solicitudes de soporte para todo tipo de inventario de material
-
-- Gestión de la información comercial y financiera (adquisición, garantía y extensión, amortización)
-```
-
-### **Reserva**
-
-```
-- Gestión de reservas
-
-- Interfaz usuario (calendario)
-```
-
-### **Base de datos de conocimientos**
-
-```
-- Gestión de artículos de la base de datos de conocimientos y de la FAQ (preguntas frecuentes)
-
-- Gestión de contenidos por objetivos (perfiles, grupos, etc..)
-```
-
-### **Informes**
-```
-- Generación de informes de dispositivos (tipo de dispositivos, contrato asociado, informes comerciales)
-```
 
 Esto es lo que trae por defecto en su instalación, aunque además de todo esto, GLPI tiene muchos plugins que añaden otras características: 
 
@@ -273,4 +218,17 @@ services:
     restart: always
 ```
 
-A diferencia con la instalación con script en bash es que lo mencionado anterior mente de configuraciones, extensiones php, vulnerabilidades... Nos lo ahorramos con esto, lo que hace que sea mas sencillo de desplegar. 
+A diferencia con la instalación con script en bash es que lo mencionado anteriormente de configuraciones, extensiones php, vulnerabilidades... Nos lo ahorramos con esto, lo que hace que sea mas sencillo de desplegar. 
+
+## GLPI Autenticación LDAP en Active Directory
+
+Para poder comenzar a hacer inventariado necesitaremos conectarlo a un dominio, con los siguientes pasos..  
+
+Lo primero que debemos hacer es crear una regla de Firewall en el controlador de dominio de Windows.
+
+Esta regla de firewall permitirá que el servidor GLPI consulte la base de datos de Active Directory, en concreto el puerto TCP 389.
+
+A continuación, necesitamos crear 1 cuenta en la base de datos de Active Directory para poder consultarla. 
+Dentro de Usuarios y Equipos de Active Directory creamos esa cuenta.
+
+Y finalmente en nuestro navegador entramos a nuestro servidor web, dentro de Configuración > Autenticación > Directorios LDAP, le damos a + para conectar GLPI con nuestro dominio Windows. 
