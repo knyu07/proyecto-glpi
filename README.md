@@ -62,9 +62,11 @@ De entre ellas los más populares son por ejemplo:
 
 - **FormCreator**: Permite la creación de formularios personalizados y de fácil acceso para los usuarios cuando desean crear uno o más tickets o cambios.
 
-- **Red De Arquitectura**: Permite generar automáticamente una representación gráfica de la arquitectura de la red.
+- **Dashboard**: Este complemento permite ver gráficos e informes de estadísticas de GLPI.
 
-- **Informe de IP**: Permite crear informes de IP para visualizar las direcciones IP utilizadas y gratuitas en una red determinada.
+- **Data Injection**: Permite crear modelos de inyección para una futura reutilización.
+
+- **News**: Este complemento permite mostrar mensajes en la página de inicio de GLPI.
 
 En general son plugins para aumentar la variedad de inventariado dentro de la empresa. 
 
