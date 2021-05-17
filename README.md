@@ -17,7 +17,7 @@ GLPI utiliza:
 - **MySQL/MariaDB** para la base de datos
 - **HTML** para las páginas web
 - **CSS** para las hojas de estilo
-- **XML** para lña generación de informes
+- **XML** para la generación de informes
 
 
 
