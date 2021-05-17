@@ -68,3 +68,5 @@ https://rdr-it.com/es/fusioninventory-configurar-tareas-de-descubrimiento-e-inve
 https://www.capterra.es/alternatives/126254/glpi
 
 https://progsoft.net/es/software/glpi
+
+https://appmus.com/vs/glpi-vs-spiceworks
