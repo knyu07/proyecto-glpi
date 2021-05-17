@@ -1,4 +1,5 @@
 # PROYECTO INTEGRADO - GLPI
+![](images/glpi.png)
 
 ## GLPI - Gestionnaire de Parc Informatique
 
@@ -49,6 +50,7 @@ Este módulo administra a los usuarios, grupos, entidades, perfiles, reglas y di
 
 Este módulo   administra   y   controla   los   parámetros   dentro   de GLPI, títulos   en   general del   sistema, notificaciones por correo, SLA, configuración en general, identificación por origen externo o directorio activo y se administran los plugin.
 
+![](images/caracteristicas.png)
 
 Esto es lo que trae por defecto en su instalación, aunque además de todo esto, GLPI tiene muchos plugins que añaden otras características: 
 
@@ -149,6 +151,9 @@ Finalmente para que se apliquen los cambios reiniciamos apache
 ```
 systemctl restart apache2
 ```
+
+!^[](images/extensiones.jpeg)
+
 · CONFIGURACIÓN:
 
 Ahora queda evitar tener agujeros de seguridad, como puede ser con el archivo .htaccess que para que surgan efecto dentro de la configuración del virtual host de apache haríamos una serie de cambios. 
