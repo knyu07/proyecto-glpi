@@ -152,7 +152,7 @@ Finalmente para que se apliquen los cambios reiniciamos apache
 systemctl restart apache2
 ```
 
-!^[](images/extensiones.png)
+![](images/extensiones.png)
 
 · CONFIGURACIÓN:
 
